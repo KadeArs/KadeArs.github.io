@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+
+.header {
+    display: flex;
+    position: absolute;
+    width: 100%;
+}
+.header .icon {
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+.header .header-items {
+    display: flex;
+}
+
+.header-items li {
+    font-size: medium;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 16px 20px 16px;
+    padding: 10px;
+}
+
+.header-items li a{
+    text-decoration: none;
+}
+
+.header-items li a:hover{
+    color: greenyellow;
+    border-bottom: 3px white solid;
+    transition: 0.25s;
+}
+
+.header-items li input {
+    color: black;
+    height: 30px;
+    width: 268px;
+    border-radius: 6px;
+    opacity: 80%;
+    transition: 0.25s;
+}
+
+.header-items li input:hover {
+    cursor: text;
+    box-shadow: 1px 1px 0 ghostwhite;
+}
+
+.cover img {
+    width: 100%;
+    height: 100vh;
+}
+
+.cover .title {
+    font-weight: bold;
+    font-size: 65px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+
+.cover .descript {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+.cover button {
+    border: 0px ;
+    background-color: rgb(190, 231, 129);
+    font-size: 28px;
+    position: absolute;
+    bottom: 15%;
+    left: 40%;
+    width: 280px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0 rgb(133, 119, 119);
+    transition: box-shadow .25s;
+}
+
+.cover button:hover {
+    box-shadow: 0 0 0 rgb(133, 119, 119);
+    cursor: pointer;
+}
+
+main {
+    overflow: hidden;
+}
+
+main input[type="radio"] {
+    display: none;
+}
+
+.slide-button {
+    position: relative;
+    background-color: #ddd;
+    bottom: 36px;
+    float: right;
+}
+main .prev-button {
+    color: #333;
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-bottom: 0px;
+    border-radius: 4px;
+    height: 36px;
+    float:right;
+}
+
+main .next-button {
+    color: #333;
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-bottom: 0px;
+    border-radius: 4px;
+    height: 36px;
+    transition: o.4s;
+    float: right;
+}
+main .next-button:hover {
+    background-color: #fff;
+}
+main .prev-button:hover {
+    background-color: #fff;
+}
+.isi {
+    position: relative;
+    display: flex;
+    width: 200%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: antiquewhite;
+    transition: all 0.4s ease;
+}
+
+.isi-img1 {
+    border: 1px black solid;
+    border-radius: 8px;
+    height: 250px;
+    margin-left: 38%;
+}
+
+.isi-img2 {
+    border: 1px black solid;
+    border-radius: 8px;
+    height: 250px;
+    margin-left: 39%;
+}
+.isi p {
+    text-align: center;
+    margin-left: 70px;
+}
+
+.isi .about-us {
+    margin-left: 10px;
+}
+
+
+.isi .about-us h1 {
+    font-size: 26px;
+    text-decoration: underline;
+    text-align: center;
+} 
+
+.isi .details {
+    margin-left: 89px;
+}
+
+.isi .details h1 {
+    font-size: 26px;
+    text-decoration: underline;
+    text-align: center;
+} 
+
+#two:checked ~ .isi {
+    margin-left: -100%;
+}
+
+.sarana-akomodasi {
+    background-color: lightgray;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    
+}
+
+.grid {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid-item {
+    list-style: none;
+}
+
+.grid-col > .grid-item {
+    width: 33.3%;
+}
+
+.card {
+    margin: 10px;
+    padding: 0 10px;
+}
+.card-link {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    border-radius: 8px;
+    border-top: 2px #333 solid;
+    border-bottom: 2px #333 solid;;
+    background-color: wheat;
+    box-shadow: 5px 5px 0 #bbb;
+    transition: background-color .25s;
+}
+.card-link:hover {
+    background-color: white;
+    border-radius: 8px;
+}
+
+.card-image {
+    margin-top: 10px;
+    margin-left: 23%;
+    border: 2px #333 solid;
+    border-radius: 6px;
+}
+.card-info {
+    padding: 5px 10px;
+}
+
+.form-kontak {
+    background: hsl(0, 0%, 94%);
+    display: flex;
+    margin-top: 13px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.maps {
+    border-radius: 10px;
+    border: 2px #333 solid;
+    height: 455px;
+}
+
+.form-table {
+    margin-left: 50px;
+}
+
+.headline {
+    text-align: center;
+    color: black;
+    font-size: 16x;
+}
+
+.form-table th {
+    padding: 10px;
+    text-align: left;
+}
+
+.form-table th label {
+    color: black;
+    font-size: 13px;
+}
+.form-table td {
+    padding: 10px;
+}
+.form-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    background: #92d3ca;
+    text-align: center;
+    padding: 15px 60px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 0 #bbb;
+    transition: box-shadow .25s;
+}
+.button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0 #bbb;
+}
+
+.input {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-width: 500px;
+    color: black;
+    font-size: 13px;
+}
+.textarea {
+    color: black;
+    font-size: 13px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-width: 500px;
+    min-height: 80px;
+}
+
+footer {
+    background-color: #ccc;
+    display: flex;
+    padding: 20px;
+}
+
+.copyright {
+    margin-left: 10%;
+}
+
+.copyright p {
+    font-size: 13px;
+}
+
+.footer-nav {
+    list-style: none;
+    margin-left: 15%;
+}
+
+.footer-nav2 {
+    list-style: none;
+    margin-left: 10%;
+}
+
+.footer-nav2 li a { 
+    font-size: 13px;
+    text-decoration: none;
+}
+
+
+.footer-nav li a { 
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.social-media {
+    margin-left: 20%;
+}
+
+.social-media h3 {
+    font-size: 15px;
+    text-align: center;
+}
+
+.social-media a {
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.social-media a i {
+    font-size: 20px;
+    margin-top: 15px;
+}
